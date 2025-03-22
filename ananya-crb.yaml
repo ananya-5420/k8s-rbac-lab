@@ -1,0 +1,15 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  creationTimestamp: "2025-03-22T18:39:05Z"
+  name: ananya-crb
+  resourceVersion: "4140"
+  uid: 2e91eea5-0853-41a5-9af4-9f02c1a2c391
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: ananya-cr
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: Ananya

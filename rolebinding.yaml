@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: ananya-rb
+  namespace: cy5130-rbac
+subjects:
+- kind: User
+  name: Ananya
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: ananya-pods
+  apiGroup: rbac.authorization.k8s.io
