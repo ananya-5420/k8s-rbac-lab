@@ -5,3 +5,7 @@
 *.srl
 *.log
 *.tmp
+*.key
+*.csr
+*.crt
+cy5130.config
